@@ -3,7 +3,7 @@ import {
     createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
 
-import SignUpForm from "../../components/sign-up-form/sign-up.compoonent";
+import SignUpForm from "../../components/sign-up-form/sign-up-form.compoonent";
 
 
 const SignIn = () => {
