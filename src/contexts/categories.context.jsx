@@ -14,7 +14,6 @@ import { getCategoriesAndDocuments } from '../utils/firebase/firebase.utils';
     useEffect(()=> {
       const getCategoriesMap = async () => {
          const categoryMap = await getCategoriesAndDocuments();
-         console.log(categoryMap);
          setCategoriesMap(categoryMap);
       }
       getCategoriesMap();
