@@ -1,5 +1,3 @@
-import { UserContext } from '../../contexts/user.context';
-
 import { CartContext } from '../../contexts/cart.context';
 
 import {
