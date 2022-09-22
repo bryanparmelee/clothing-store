@@ -5006,6 +5006,7 @@ __metadata:
     redux: ^4.2.0
     redux-logger: ^3.0.6
     redux-persist: ^6.0.0
+    redux-thunk: ^2.4.1
     reselect: ^4.1.6
     sass: ^1.54.5
     styled-components: ^5.3.5
@@ -11535,6 +11536,15 @@ __metadata:
   peerDependencies:
     redux: ">4.0.0"
   checksum: edaf10dbf17351ce8058d0802357adae8665b3a1ff39371834e37838ddbe1a79cccbc717b8ba54acb5307651ccf51d0f7dc1cbc8dbae0726ff952d11ef61c6b8
+  languageName: node
+  linkType: hard
+
+"redux-thunk@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "redux-thunk@npm:2.4.1"
+  peerDependencies:
+    redux: ^4
+  checksum: af5abb425fb9dccda02e5f387d6f3003997f62d906542a3d35fc9420088f550dc1a018bdc246c7d23ee852b4d4ab8b5c64c5be426e45a328d791c4586a3c6b6e
   languageName: node
   linkType: hard
 
