@@ -3012,6 +3012,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stripe/react-stripe-js@npm:^1.11.0":
+  version: 1.11.0
+  resolution: "@stripe/react-stripe-js@npm:1.11.0"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@stripe/stripe-js": ^1.37.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: aac35e58d45c2c0ba67614f0589f94d56e07c578d5c38e92a9e326f383cac5d2f10429f17185337bb68e26dba6daa0389339565ef017df8c297f1ce8d659a296
+  languageName: node
+  linkType: hard
+
+"@stripe/stripe-js@npm:^1.38.1":
+  version: 1.38.1
+  resolution: "@stripe/stripe-js@npm:1.38.1"
+  checksum: ddc7744c83b5c6a18af1c673fca7b760e0660023e6ec01e9a9440f1f3c85977d583eeb5e0680c3b8b253501cc9328f1392b376c2dc22ff83f8a7f83c6f28031c
+  languageName: node
+  linkType: hard
+
 "@surma/rollup-plugin-off-main-thread@npm:^2.2.3":
   version: 2.2.3
   resolution: "@surma/rollup-plugin-off-main-thread@npm:2.2.3"
@@ -3486,6 +3506,13 @@ __metadata:
   version: 18.7.14
   resolution: "@types/node@npm:18.7.14"
   checksum: 99cf28ff854100158de875cca23c7acc3cc01dfee526a52b90b7f36767c821bcbaf2be0a98a70f06f3b78f3c60639168ff949d725b61e2e124f9f71f1fb8043d
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:>=8.1.0":
+  version: 18.7.21
+  resolution: "@types/node@npm:18.7.21"
+  checksum: 9e0558dd44766fb3b1b26815e9877849d8f1188115e0d2bee540cee2c5a11f90e4c00ee059edae8ea018e7f66217e4bf53271536c9a6fd05e33f713b8daa4c66
   languageName: node
   linkType: hard
 
@@ -5057,10 +5084,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "clothing-store@workspace:."
   dependencies:
+    "@stripe/react-stripe-js": ^1.11.0
+    "@stripe/stripe-js": ^1.38.1
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
     "@testing-library/user-event": ^13.5.0
     babel-eslint: ^10.1.0
+    dotenv: ^16.0.2
     eslint-config-react-app: ^7.0.1
     firebase: ^9.9.2
     react: ^18.2.0
@@ -5075,6 +5105,7 @@ __metadata:
     redux-thunk: ^2.4.1
     reselect: ^4.1.6
     sass: ^1.54.5
+    stripe: ^10.11.0
     styled-components: ^5.3.5
     util: ^0.12.4
     web-vitals: ^2.1.4
@@ -6047,6 +6078,13 @@ __metadata:
   version: 10.0.0
   resolution: "dotenv@npm:10.0.0"
   checksum: f412c5fe8c24fbe313d302d2500e247ba8a1946492db405a4de4d30dd0eb186a88a43f13c958c5a7de303938949c4231c56994f97d05c4bc1f22478d631b4005
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.0.2":
+  version: 16.0.2
+  resolution: "dotenv@npm:16.0.2"
+  checksum: ca8f9ca2d67929c7771069f4c31b4e46b9932621009e658e5afd655dde2d69b77642bf36dbc9e72bc170523dfd908a9ee41c26f034c1fdc605ace3b1b4b10faf
   languageName: node
   linkType: hard
 
@@ -11146,7 +11184,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -11238,6 +11276,15 @@ __metadata:
   dependencies:
     side-channel: ^1.0.4
   checksum: 0fac5e6c7191d0295a96d0e83c851aeb015df7e990e4d3b093897d3ac6c94e555dbd0a599739c84d7fa46d7fee282d94ba76943983935cf33bba6769539b8019
+  languageName: node
+  linkType: hard
+
+"qs@npm:^6.10.3":
+  version: 6.11.0
+  resolution: "qs@npm:6.11.0"
+  dependencies:
+    side-channel: ^1.0.4
+  checksum: 6e1f29dd5385f7488ec74ac7b6c92f4d09a90408882d0c208414a34dd33badc1a621019d4c799a3df15ab9b1d0292f97c1dd71dc7c045e69f81a8064e5af7297
   languageName: node
   linkType: hard
 
@@ -12646,6 +12693,16 @@ __metadata:
   version: 3.1.1
   resolution: "strip-json-comments@npm:3.1.1"
   checksum: 492f73e27268f9b1c122733f28ecb0e7e8d8a531a6662efbd08e22cccb3f9475e90a1b82cab06a392f6afae6d2de636f977e231296400d0ec5304ba70f166443
+  languageName: node
+  linkType: hard
+
+"stripe@npm:^10.11.0":
+  version: 10.11.0
+  resolution: "stripe@npm:10.11.0"
+  dependencies:
+    "@types/node": ">=8.1.0"
+    qs: ^6.10.3
+  checksum: 13fe31a4a7b938ca1bbc364d50e6322e65c0d0504189007a2a3dbd6806e34452c7613e79afe29d2e53e6e5175a0118f27ea12e4ab2de2b5ab4501a7ab6cd26ad
   languageName: node
   linkType: hard
 
