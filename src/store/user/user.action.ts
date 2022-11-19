@@ -1,7 +1,14 @@
-import { USER_ACTION_TYPES } from "./user.types";
-import  { createAction, withMatcher, Action, ActionWithPayload } from '../../utils/reducer/reducer.utils';
-import { UserData, AdditionalInformation } from "../../utils/firebase/firebase.utils";
 import { User } from "firebase/auth";
+import { USER_ACTION_TYPES } from "./user.types";
+import  { 
+    createAction, 
+    withMatcher, 
+    Action, 
+    ActionWithPayload 
+} from '../../utils/reducer/reducer.utils';
+
+import { UserData, AdditionalInformation } from "../../utils/firebase/firebase.utils";
+
 
 export type CheckUserSession = Action<USER_ACTION_TYPES.CHECK_USER_SESSION>;
 
@@ -62,7 +69,7 @@ export const setCurrentUser = withMatcher(
         createAction(USER_ACTION_TYPES.SET_CURRENT_USER, user)
 );
 
-export const oogleSignInStart = withMatcher(
+export const googleSignInStart = withMatcher(
     (): GoogleSignInStart => 
         createAction(USER_ACTION_TYPES.GOOGLE_SIGN_IN_START)
 );
@@ -73,7 +80,7 @@ export const emailSignInStart = withMatcher(
 );
 
 export const signInSuccess = withMatcher(
-    (user: UserData): SignInSuccess => 
+    (user: UserData & {id: string}): SignInSuccess => 
         createAction(USER_ACTION_TYPES.SIGN_IN_SUCCESS, user)
 );
 
